@@ -7,3 +7,86 @@
 .container > div {
     margin-bottom: 60px;
 }
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.logo img{
+    width: 50px;
+    transition: all ease 1.5s;
+}
+
+.logo img:hover{
+    transform: scale(2.0);
+    rotate: 360deg;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+.logo ul{
+    border: 1px solid white;
+    list-style-type: none;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    transition: all ease 1s;
+
+    
+    
+}
+.logo ul li a{
+    position: relative;
+}
+
+.logo ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+   width: 0;
+   bottom: -5px;
+   background: #8a1c4a;
+   height: 2px;
+   transition: all 1s ease-out ;
+
+}
+
+
+.logo ul li a:hover:after { 
+    color: #8a1c4a;
+    left: 0;
+    width: 100%;
+  }
+  
+  .logo ul li a:hover {
+    color: #8a1c4a;
+  }
+
+
+  .title{
+    color: #8a1c4a;
+    font-size: 42px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
