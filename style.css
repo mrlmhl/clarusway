@@ -85,8 +85,54 @@
 
   .title{
     color: #8a1c4a;
-    font-size: 42px;
+    font-size: 60px;
     font-weight: 800;
     font-family: 'Times New Roman', Times, serif;
     
   }
+
+  .images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all ease 1s;
+    gap: 2rem;
+  }
+
+  .images a{
+    width: 250px;
+    height: 200px;
+    animation: scaler 7s ease-in-out infinite;
+    -webkit-box-shadow
+    box-shadow: 0px 4px 9px 1px black;
+    transition: all ease 3s;
+
+    transform: translate(0);
+
+  }
+.images a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.images:hover a{
+    animation: none;
+}
+
+.images a :hover{
+    transform: scale(2);
+    cursor: pointer;
+    z-index: 1;
+}
+
+@keyframes scaler {
+    0%{
+        transform: scale(0.9);
+    }
+    
+    100%{
+        transform: scale(2);
+    }
+}
