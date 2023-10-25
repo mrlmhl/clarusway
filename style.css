@@ -127,6 +127,71 @@
     z-index: 1;
 }
 
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+.icons ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+.icons i{
+    font-size: 30px;
+    transition: ease 1s;
+}
+.icons i:hover{
+    transform: scale(1.3);
+    rotate: 360deg;
+    cursor: pointer;
+    
+}
+.fa-instagram:hover{
+    color:#FC00D9 ;
+}
+
+
+.fa-youtube:hover{
+    color:#F70000
+}
+
+.fa-facebook:hover{
+    color: #1773EA;
+}
+
+.fa-twitter:hover{
+    color: #1773EA;
+}
+
+#check{
+    display: none;
+    
+}
+
+.btn_one{
+    display: none;
+    font-size: 50px;
+}
+
+.btn_two{
+    display: none;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @keyframes scaler {
     0%{
         transform: scale(0.9);
@@ -135,4 +200,87 @@
     100%{
         transform: scale(2);
     }
+}
+
+
+@media screen and(max-width : 500px) {
+    .title{
+        font-size: 40px;
+    }
+
+    .images a {
+        transform: translate(-150px);
+    }
+    .icons{
+        justify-content: center;
+
+    }
+    .menu ul{
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .btn_one{
+        display: block;
+
+    }
+
+    .btn_one{
+        display: block;
+    }
+
+    #check:checked ~ ul{
+            opacity: 1;
+
+        }
+
+    #check:checked ~ .btn_two {
+            display: block;
+          }
+     #check:checked ~ .btn_one  {
+            display: none;
+          }
+          
+}
+
+
+
+
+@keyframes scaler {
+    0% {
+      transform: scale(0.9);
+    }
+  
+    100% {
+      transform: scale(1.5);
+    }
+
+  
+}
+
+
+
+@media screen and (max-width :370px) {
+  .title{
+    font-size: 30px;
+    
+  }
+  .logo ul  {
+      flex-direction: column;
+  }
+
+
+  @keyframes scaler {
+    0% {
+      transform: scale(0.9);
+    }
+  
+    100% {
+      transform: scale(1.1);
+    }
+
+    
+  }
 }
